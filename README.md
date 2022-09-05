@@ -26,6 +26,8 @@ idf.py menuconfig
 ## LVGL
 Initialize esp32-video
 ```C
+#include "capi_video.h"
+//....
 void app_main(void) {
     esp32_video_start(0);// PAL
     //esp32_video_start(1);// NTSC
@@ -35,6 +37,8 @@ void app_main(void) {
 ```
 LVGL driver
 ```C
+#include "capi_video.h"
+//....
 static void  lvgl_esp32_video_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p) {
     // esp32_video_sync(); // Display is more stable, but more stuttering
     // Set colors one by one
