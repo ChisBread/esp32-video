@@ -1,10 +1,8 @@
-[简体中文](./README.zh.md)
-
 # ESP32-Video
-ESP32-Video is the esp-idf component ported from the [esp_8_bit](https://github.com/ChisBread/esp_8_bit) project.
+esp32-video 是从项目 [esp_8_bit](https://github.com/ChisBread/esp_8_bit) 移植的esp32-idf组件
 
 # Usage
-Suppose your project directory looks like this
+假设你的项目目录如下所示
 ```
 - YourProject
   - components/
@@ -12,15 +10,15 @@ Suppose your project directory looks like this
   - CMakeLists.txt
   - sdkconfig
 ```
-1. Add the library as a new component to your project.
+1. 将esp32-video添加到你项目的components文件夹中
 ```
 git submodule add https://github.com/ChisBread/esp32-video components/esp32-video
 ```
-2. Compilation optimization set to O2 and default CPU frequency set to 240MHz.(required)
+2. 设置编译优化选项为O2、 默认CPU 频率为240MHz (必要)
 ```
 idf.py menuconfig
 ```
-3. Combining esp32-video with an existing graphics library
+3. 和你现有的图形库(如LVGL)结合使用
 
 # Examples
 ## LVGL
