@@ -21,6 +21,7 @@ idf.py menuconfig
 3. 和你现有的图形库(如LVGL)结合使用
 
 # Examples
+[composite_video_lvgl_benchmark](https://github.com/ChisBread/esp32-codelab/tree/master/composite_video_lvgl)
 ## LVGL
 Initialize esp32-video
 ```C

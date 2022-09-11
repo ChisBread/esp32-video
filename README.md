@@ -23,6 +23,7 @@ idf.py menuconfig
 3. Combining esp32-video with an existing graphics library
 
 # Examples
+[composite_video_lvgl_benchmark](https://github.com/ChisBread/esp32-codelab/tree/master/composite_video_lvgl)
 ## LVGL
 Initialize esp32-video
 ```C
